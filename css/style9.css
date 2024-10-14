@@ -1,0 +1,85 @@
+/* admin_style.css */
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.dashboard-container {
+  margin-top: 80px; /* Adjust margin to avoid overlapping with the header */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboard-button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.dashboard-button:hover {
+  background-color: #0056b3;
+}
+
+.logout {
+  background-color: #dc3545;
+}
+
+.logout:hover {
+  background-color: #c82333;
+}
+
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 32px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn--2{
+  margin:12px 0 0 0;
+}
+
+
+
+.btn {
+  background-color: #0056b3;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 12px;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #555;
+}

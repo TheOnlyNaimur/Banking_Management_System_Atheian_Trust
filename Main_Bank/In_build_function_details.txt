@@ -1,0 +1,63 @@
+Here’s a brief overview of each function:
+
+1. getVaultBalance
+
+Purpose: This is a custom function defined to get the balance of a specific vault account from the database.
+
+How it Works:
+It takes a database connection ($conn) and a vault master account number ($vault_master_account) as parameters.
+It executes a SQL query to select the balance from the vault table where the bank_master_account matches the provided account number.
+It returns the balance if the query is successful, or 0 if the account is not found or an error occurs.
+
+
+
+
+2. mysqli_query
+
+Purpose: Executes a SQL query against the database.
+
+How it Works:
+It takes two arguments: a database connection ($conn) and a SQL query string ($sql).
+It returns a result set resource if the query is successful, or FALSE if there is an error.
+
+
+
+
+
+3.mysqli_num_rows
+
+Purpose: Returns the number of rows in a result set.
+
+How it Works:
+It takes a result set resource (from a mysqli_query call) as its parameter.
+It returns the number of rows in the result set. If there are no rows, it returns 0
+
+
+
+
+4.mysqli_fetch_assoc
+
+Purpose: Fetches a result row as an associative array.
+
+How it Works:
+It takes a result set resource (from a mysqli_query call) as its parameter.
+It returns an associative array where the keys are the column names from the result set and the values are the corresponding data.
+It returns NULL if there are no more rows in the result set.
+
+
+
+
+
+
+
+
+
+//-------------------------------------------------------------------//------------------------------------------//
+In a typical scenario, you might use these functions like this:
+
+mysqli_query is used to execute a query to fetch data from the database.
+mysqli_num_rows checks if there are any rows returned by the query.
+mysqli_fetch_assoc retrieves each row of data as an associative array to process or display the data.
+getVaultBalance is a custom function that uses mysqli_query, mysqli_num_rows, and mysqli_fetch_assoc to retrieve and return the balance of a vault account.
+
+

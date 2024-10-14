@@ -1,0 +1,66 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.menu-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.btn-staff {
+  background-color: #4CAF50; /* Green color for staff */
+}
+
+.btn-user {
+  background-color: #2196F3; /* Blue color for users */
+}
+
+
+.btn:hover {
+  opacity: 0.9;
+}
